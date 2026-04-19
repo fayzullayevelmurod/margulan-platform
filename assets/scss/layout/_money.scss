@@ -1,0 +1,91 @@
+// money
+.money {
+  h2 {
+    font-weight: 400;
+    font-size: 76rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color-white;
+    margin-bottom: 60rem;
+
+    @include media('md') {
+      margin-bottom: 40rem;
+      font-size: 28rem;
+    }
+
+    span {
+      background: linear-gradient(180deg, #9fc1ff 0%, #1142ff 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &_in {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 60rem;
+
+    @include media('md') {
+      gap: 24rem;
+      grid-template-columns: repeat(1,1fr);
+    }
+  }
+
+  &_block {
+    border: 1px solid rgba(255, 255, 255, 0.26);
+    border-radius: 32rem;
+    padding: 32rem 40rem;
+    backdrop-filter: blur(26.200000762939453px);
+    background: rgba(255, 255, 255, 0.04);
+
+    @include media('md') {
+      padding: 24rem 16rem;
+    }
+
+    img {
+      width: 80rem;
+      height: 80rem;
+
+      @include media('md') {
+        width: 48rem;
+        height: 48rem;
+      }
+    }
+
+    h3 {
+      font-weight: 700;
+      font-size: 32rem;
+      line-height: 130%;
+      color: $color-white;
+      margin: 24rem 0 16rem 0;
+
+      @include media('md') {
+        font-size: 20rem;
+      }
+    }
+
+    p {
+      font-family: $font-Gilroy;
+      font-weight: 400;
+      font-size: 22rem;
+      line-height: 150%;
+      color: #d9d9d9;
+
+      @include media('md') {
+        font-size: 18rem;
+      }
+    }
+  }
+
+  .btn-blue {
+    display: block;
+    margin: 60rem auto 0 auto;
+
+    @include media('md') {
+      width: 100%;
+      margin-top: 40rem;
+    }
+  }
+}
+// money

@@ -1,0 +1,112 @@
+// faq
+.faq {
+
+  .container {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 40rem;
+
+    @include media('md') {
+      align-items: start;
+      flex-direction: column;
+    }
+  }
+
+  .section_title {
+    max-width: 400rem;
+  }
+
+  .modules {
+    width: 1172rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24rem 40rem;
+    align-items: start;
+
+    @include media('md') {
+      width: 100%;
+      max-width: 100%;
+      grid-template-columns: repeat(1,1fr);
+    }
+
+    &_item {
+      padding: 32rem 24rem;
+      transition: 0.3s ease;
+      border: 1rem solid rgba(255, 255, 255, 0.26);
+      border-radius: 24rem;
+      backdrop-filter: blur(26.200000762939453px);
+      background: rgba(255, 255, 255, 0.04);
+
+      @include media('md') {
+        padding: 20rem 25rem;
+      }
+
+      &.active {
+        .modules_body {
+          max-height: 300rem;
+          opacity: 1;
+          margin-top: 16rem;
+        }
+
+        .modules_icon {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    &_header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      gap: 20rem;
+
+      @include media('md') {
+        gap: 5rem;
+      }
+
+      h3 {
+        font-weight: 700;
+        font-size: 28rem;
+        color: $color-white;
+        max-width: 400rem;
+
+        @include media('md') {
+          font-size: 22rem;
+        }
+
+        span {
+          background: linear-gradient(180deg, #9fc1ff 0%, #1142ff 100%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+
+    &_icon {
+      transition: 0.3s ease;
+
+      svg {
+        width: 40rem;
+        height: 40rem;
+        flex-shrink: 0;
+      }
+    }
+
+    &_body {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: all 0.35s ease;
+
+      p {
+        color: #aaa;
+        font-size: 14rem;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+// faq

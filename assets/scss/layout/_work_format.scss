@@ -1,0 +1,118 @@
+// work_format
+.work_format {
+  &_in {
+    background: #01011c;
+    border-radius: 50rem;
+    padding: 80rem 60rem 90rem 60rem;
+    position: relative;
+    overflow: hidden;
+
+    @include media('md') {
+      border-radius: 24rem;
+      padding: 24rem 10rem;
+    }
+
+    .circle {
+      position: absolute;
+      top: -76rem;
+      left: -130rem;
+      width: 536rem;
+      height: 522rem;
+      border-radius: 100%;
+      background: #091d84;
+      filter: blur(170px);
+    }
+
+    .circle_two {
+      position: absolute;
+      right: 0;
+      bottom: -31rem;
+      width: 547rem;
+      height: 708rem;
+      border-radius: 100%;
+      background: #091d84;
+      filter: blur(170px);
+    }
+  }
+
+  &_text {
+    max-width: 874rem;
+    position: relative;
+    z-index: 2;
+
+    h2 {
+      font-weight: 400;
+      font-size: 76rem;
+      text-transform: uppercase;
+      color: $color-white-f5;
+
+      @include media('md') {
+        font-size: 32rem;
+      }
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      margin: 40rem 0;
+
+      li {
+        font-family: $font-Gilroy;
+        font-weight: 400;
+        font-size: 32rem;
+        color: $color-white-f5;
+
+        @include media('md') {
+          font-size: 20rem;
+        }
+      }
+    }
+
+    h3 {
+      font-weight: 600;
+      font-size: 36rem;
+      color: $color-white-f5;
+
+      @include media('md') {
+        font-size: 24rem;
+      }
+    }
+
+    p {
+      font-family: $font-Gilroy;
+      font-weight: 400;
+      font-size: 32rem;
+      color: $color-white-f5;
+      margin: 24rem 0 52rem 0;
+
+      @include media('md') {
+        margin: 24rem 0 345rem 0;
+        font-size: 20rem;
+      }
+    }
+
+    .btn-white {
+      @include media('md') {
+        width: 100%;
+      }
+    }
+  }
+
+  &_img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 1000rem;
+
+    @include media('md') {
+      width: 700rem;
+      min-width: 700rem;
+      right: -50rem;
+    }
+
+    @include media('xs') {
+      right: -70rem;
+    }
+  }
+}
+// work_format

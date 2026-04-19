@@ -1,0 +1,138 @@
+.contact {
+
+    .container {
+        position: relative;
+    }
+
+    &-form {
+        background: #000C2B;
+        padding: 56rem 56rem 49rem 56rem;
+        border-radius: 65rem;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+
+        @include media('md') {
+            padding: 28rem 10rem 90rem 10rem;
+            border-radius: 24rem;
+        }
+
+        &__bg {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            @include media('md') {
+                object-position: bottom right;
+            }
+        }
+
+        &::after {
+            border-radius: 64rem;
+            content: "";
+            position: absolute;
+            z-index: -1;
+            inset: 0;
+            border: 1rem solid transparent;
+            background: linear-gradient(170deg, #FFFFFF, rgba(119, 119, 119, 0.2)) border-box;
+            mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+            mask-composite: exclude;
+
+            @include media('md') {
+                border-radius: 24rem;
+            }
+        }
+
+        h3 {
+            font-family: $font-Roboto;
+            font-weight: 400;
+            font-size: 67rem;
+            line-height: 113%;
+            letter-spacing: -0.03em;
+            text-transform: uppercase;
+            color: #fdfdfd;
+            max-width: 985rem;
+            margin-bottom: 20rem;
+
+            @include media('md') {
+                font-size: 28rem;
+                max-width: 100%;
+                text-align: center;
+            }
+
+            br {
+                @include media('md') {
+                    display: none;
+                }
+            }
+        }
+
+        h4 {
+            font-family: $font-Gilroy;
+            font-weight: 300;
+            font-size: 32rem;
+            letter-spacing: -0.06em;
+            color: #fff;
+            margin-bottom: 66rem;
+
+            @include media('md') {
+                font-weight: 200;
+                text-align: center;
+                font-size: 20rem;
+                margin-bottom: 20rem;
+            }
+        }
+
+        .form-group {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28rem;
+            max-width: 1316rem;
+            margin-bottom: 30rem;
+
+            @include media('md') {
+                grid-template-columns: repeat(1,1fr);
+                gap: 16rem;
+                max-width: 100%;
+                margin-bottom: 24rem;
+            }
+        }
+
+        .btn-blue {
+            padding: 0;
+        }
+
+        li {
+            font-family: $font-Gilroy;
+            font-weight: 200;
+            font-size: 18rem;
+            color: #f9f9f9;
+
+            @include media('md') {
+                font-size: 14rem;
+            }
+        }
+    }
+
+    &_img {
+        position: absolute;
+        top: -189rem;
+        right: -100rem;
+        width: 483rem;
+        height: 725rem;
+        z-index: 2;
+
+        @include media('md') {
+            top: auto;
+            right: -5rem;
+            bottom: -152rem;
+            width: 205rem;
+            height: 307rem;
+            transform: rotate(-12deg);
+        }
+    }
+}

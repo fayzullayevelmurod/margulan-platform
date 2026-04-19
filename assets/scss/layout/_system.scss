@@ -1,0 +1,141 @@
+// system
+.system {
+  &_head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60rem;
+
+    .section_title {
+      max-width: 990rem;
+      text-align: center;
+    }
+  }
+
+  &_in {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20rem;
+
+    @include media('md') {
+      grid-template-columns: repeat(2,1fr);
+    }
+
+    @include media('sm') {
+      grid-template-columns: repeat(1,1fr);
+    }
+  }
+
+  &_card {
+    background: #18171C;
+    border-radius: 35rem;
+    padding: 14rem;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &::after {
+      border-radius: 35rem;
+      content: "";
+      position: absolute;
+      z-index: -1;
+      inset: 0;
+      border: 1rem solid transparent;
+      background: linear-gradient(138.86deg, #FFFFFF 0.53%, rgba(119, 119, 119, 0.2) 99.47%);
+      mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+      mask-composite: exclude;
+
+      @include media('md') {
+          border-radius: 24rem;
+      }
+    }
+
+    @include media('md') {
+      border-radius: 24rem;
+      padding: 10rem;
+    }
+
+    &-text {
+      padding: 10rem;
+      margin-bottom: 24rem;
+    }
+
+    &-img {
+      position: relative;
+
+      .play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        width: 100rem;
+        height: 100rem;
+        border-radius: 50%;
+        background: linear-gradient(90deg, #FF0000 0%, #C70A0A 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        opacity: 60%;
+
+        @include media('md') {
+          width: 60rem;
+          height: 60rem;
+        }
+
+        svg {
+          width: 40rem;
+          height: 40rem;
+
+          @include media('md') {
+            width: 24rem;
+            height: 24rem;
+          }
+        }
+      }
+    }
+
+    h3 {
+      font-family: $font-Gilroy;
+      font-weight: 300;
+      font-size: 24rem;
+      letter-spacing: -0.06em;
+      color: #EBEBEC;
+      margin-bottom: 20rem;
+
+      @include media('md') {
+        font-size: 28rem;
+      }
+    }
+
+    h2 {
+      font-weight: 400;
+      font-size: 28rem;
+      line-height: 100%;
+      color: #FDFDFD;
+    }
+
+    img {
+      border-radius: 30rem;
+      height: 280rem;
+      width: 100%;
+      object-fit: cover;
+
+      @include media('md') {
+        border-radius: 20rem;
+      }
+    }
+  }
+
+  .btn-blue {
+    margin: 60rem auto 0 auto;
+    display: block;
+
+    @include media('md') {
+      width: 100%;
+    }
+  }
+}
+// system
