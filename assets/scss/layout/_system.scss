@@ -6,7 +6,12 @@
     justify-content: center;
     margin-bottom: 60rem;
 
+    @include media('md') {
+      margin-bottom: 48rem;
+    }
+
     .section_title {
+      font-weight: 500;
       max-width: 990rem;
       text-align: center;
     }
@@ -106,7 +111,7 @@
       margin-bottom: 20rem;
 
       @include media('md') {
-        font-size: 28rem;
+        font-size: 18rem;
       }
     }
 
@@ -115,6 +120,10 @@
       font-size: 28rem;
       line-height: 100%;
       color: #FDFDFD;
+
+      @include media('md') {
+        font-size: 22rem;
+      }
     }
 
     img {

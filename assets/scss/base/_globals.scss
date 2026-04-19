@@ -123,7 +123,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .section_title {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 72rem;
   line-height: 121%;
   text-transform: uppercase;
@@ -138,7 +138,7 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 
   @include media('md') {
-    font-size: 32rem;
+    font-size: 28rem;
   }
 }
 

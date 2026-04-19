@@ -1,0 +1,126 @@
+// people
+.people {
+  position: relative;
+  padding: 100rem 0 190rem 0;
+  overflow: hidden;
+
+  @include media('md') {
+    padding: 80rem 0 0 0;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  &_img {
+    position: absolute;
+    right: -65rem;
+    bottom: -340rem;
+    width: 730rem;
+
+    @include media('md') {
+      display: none;
+    }
+  }
+
+  &_text {
+    max-width: 965rem;
+
+    .section_title {
+      font-weight: 500;
+      font-size: 67rem;
+      margin-bottom: 60rem;
+      letter-spacing: -0.06em;
+
+      span {
+        display: inline;
+      }
+
+      @include media('md') {
+        font-size: 28rem;
+        letter-spacing: 0;
+        margin-bottom: 48rem;
+      }
+    }
+
+    h3 {
+      font-family: $font-Gilroy;
+      font-weight: 400;
+      font-size: 32rem;
+      color: #e6e6e6;
+      max-width: 520rem;
+
+      @include media('md') {
+        display: none;
+      }
+    }
+
+    .people_img_mobile {
+      display: none;
+      @include media('md') {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    ul {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 32rem;
+      margin: 32rem 0;
+
+      @include media('md') {
+        grid-template-columns: repeat(1,1fr);
+        border-radius: 16rem;
+        background: #101010;
+        border: 1rem solid rgba(143, 143, 143, 1);
+        gap: 24rem;
+        margin: 0 0 32rem 0;
+        padding: 12rem;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 12rem;
+      }
+
+      img {
+        width: 42rem;
+        height: 42rem;
+        display: flex;
+        flex-shrink: 0;
+      }
+
+      span {
+        font-family: $font-Gilroy;
+        font-weight: 400;
+        font-size: 24rem;
+        color: $color-white;
+        max-width: 280rem;
+
+        @include media('md') {
+          max-width: 100%;
+          font-size: 18rem;
+        }
+      }
+    }
+
+    blockquote {
+      font-family: $font-Gilroy;
+      font-weight: 700;
+      font-size: 32rem;
+      letter-spacing: -0.02em;
+      text-align: center;
+      color: #e6e6e6;
+      padding: 18rem 32rem;
+      border-radius: 24rem;
+      background: linear-gradient(90deg, #f00 0%, #c70a0a 100%);
+
+      @include media('md') {
+        font-size: 20rem;
+      }
+    }
+  }
+}
+// people
