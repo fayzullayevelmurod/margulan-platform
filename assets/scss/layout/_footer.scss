@@ -1,6 +1,5 @@
 .footer {
   padding: 40rem 0;
-  margin-top: 150rem;
   position: relative;
 
   &::before {
@@ -11,10 +10,6 @@
     width: 100%;
     height: 3rem;
     background: linear-gradient(100.44deg, #F5F5F5 0.4%, #8F8F8F 95.78%);
-  }
-
-  @include media('md') {
-    margin-top: 120rem;
   }
 
   &_top {

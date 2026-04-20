@@ -2,6 +2,10 @@
   padding: 20rem 0;
   position: relative;
 
+  @include media('md') {
+    padding: 12rem 0;
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -21,6 +25,11 @@
   &_logo {
     width: 263rem;
     height: 82rem;
+
+    @include media('md') {
+      width: 128rem;
+      height: 40rem;
+    }
 
     img {
       width: 100%;
@@ -64,8 +73,8 @@
   }
 
   .burger {
-    width: 55rem;
-    height: 55rem;
+    width: 40rem;
+    height: 40rem;
     display: none;
     position: relative;
     z-index: 4;
