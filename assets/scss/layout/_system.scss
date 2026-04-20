@@ -1,5 +1,11 @@
 // system
 .system {
+  padding: 150rem 0;
+
+  @include media('md') {
+    padding: 80rem 0;
+  }
+
   &_head {
     display: flex;
     align-items: center;
