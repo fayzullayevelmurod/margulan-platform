@@ -48,6 +48,10 @@
       line-height: 175%;
       color: $color-white;
       transition: .3s ease;
+
+      &:hover {
+        color: #C70A0A;
+      }
     }
   }
 
@@ -71,6 +75,10 @@
       line-height: 175%;
       color: $color-white;
       transition: .3s ease;
+
+      &:hover {
+        color: #C70A0A;
+      }
     }
   }
 

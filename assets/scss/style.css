@@ -645,7 +645,7 @@ p, h1, h2, h3, h4, h5, h6 {
   transition: 0.3s ease;
 }
 .header_link a:hover {
-  color: #0c31ab;
+  color: #C70A0A;
 }
 .header .burger {
   width: 40rem;
@@ -1858,6 +1858,9 @@ p, h1, h2, h3, h4, h5, h6 {
   color: #FFFFFF;
   transition: 0.3s ease;
 }
+.footer_link a:hover {
+  color: #C70A0A;
+}
 .footer_bottom {
   display: flex;
   align-items: center;
@@ -1879,6 +1882,9 @@ p, h1, h2, h3, h4, h5, h6 {
   line-height: 175%;
   color: #FFFFFF;
   transition: 0.3s ease;
+}
+.footer_bottom a:hover {
+  color: #C70A0A;
 }
 .footer .end_text {
   font-family: "Gilroy", sans-serif;
